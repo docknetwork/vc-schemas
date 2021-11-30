@@ -35,7 +35,7 @@
         "name": {
           "title": "Degree Name",
           "type": "string",
-          "description": "The person's first name."
+          "description": "The full degree name and field."
         },
         "type": {
           "title": "Degree Type",
