@@ -1,5 +1,6 @@
 {
   "schemas": [
+    "https://docknetwork.github.io/vc-schemas/basic-credential.json",
     "https://docknetwork.github.io/vc-schemas/university-degree.json"
   ]
 }
