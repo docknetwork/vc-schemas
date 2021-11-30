@@ -1,6 +1,10 @@
-# Dock VC Schemas
+# W3C Verifiable Credential Schemas
 
-A collection of Verifaible Credential schemas/templates/examples.
+A collection of Verifaible Credential JSON schemas and examples.
+
+## Official samples
+
+- [University Degree](https://docknetwork.github.io/vc-schemas/university-degree.json)
 
 ## Todos
 
