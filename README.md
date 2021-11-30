@@ -4,6 +4,7 @@ A collection of Verifaible Credential JSON schemas and examples.
 
 ## Official samples
 
+- [Basic Credential](https://docknetwork.github.io/vc-schemas/basic-credential.json)
 - [University Degree](https://docknetwork.github.io/vc-schemas/university-degree.json)
 
 ## Todos
