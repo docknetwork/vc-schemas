@@ -1,6 +1,7 @@
 {
-  "$id": "https://example.com/arrays.schema.json",
-  "description": "A representation of a person, company, organization, or place",
+  "$id": "https://docknetwork.github.io/vc-schemas/university-degree.json",
+  "name": "University Degree Subject Schema",
+  "description": "A representation of a university degree issued to a person",
   "type": "object",
   "additionalProperties": false,
   "required": ["person", "degree"],
@@ -62,4 +63,3 @@
     }
   }
 }
-
