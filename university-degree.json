@@ -1,0 +1,65 @@
+{
+  "$id": "https://example.com/arrays.schema.json",
+  "description": "A representation of a person, company, organization, or place",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["person", "degree"],
+  "properties": {
+    "id": {
+      "title": "Subject DID",
+      "type": "string"
+    },
+    "person": {
+      "title": "Person",
+      "type": "object",
+      "required": ["fullName"],
+      "properties": {
+        "fullName": {
+          "title": "Full Name",
+          "type": "string",
+          "description": "The person's full name."
+        },
+        "dateOfBirth": {
+          "title": "Date of birth",
+          "description": "The person's date of birth.",
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "degree": {
+      "title": "Degree",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Degree Name",
+          "type": "string",
+          "description": "The person's first name."
+        },
+        "type": {
+          "title": "Degree Type",
+          "type": "string",
+          "description": "The type of degree earned.",
+          "enum": [
+            "UndergraduateDegree",
+            "TransferDegree",
+            "AssociateDegree",
+            "BachelorDegree",
+            "GraduateDegree",
+            "MasterDegree",
+            "DoctoralDegree",
+            "ProfessionalDegree",
+            "SpecialistDegree"
+          ]
+        },
+        "dateEarned": {
+          "title": "Earned Degree Date",
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": ["name", "type"]
+    }
+  }
+}
+
