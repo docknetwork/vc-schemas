@@ -1,6 +1,12 @@
 {
   "schemas": [
-    "https://docknetwork.github.io/vc-schemas/basic-credential.json",
-    "https://docknetwork.github.io/vc-schemas/university-degree.json"
+    {
+      "name": "Basic Credential",
+      "uri": "https://docknetwork.github.io/vc-schemas/basic-credential.json"
+    },
+    {
+      "name": "University Degree",
+      "uri": "https://docknetwork.github.io/vc-schemas/university-degree.json"
+    }
   ]
 }
