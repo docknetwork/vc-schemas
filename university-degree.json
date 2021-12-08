@@ -6,6 +6,11 @@
   "additionalProperties": false,
   "required": ["person", "degree"],
   "properties": {
+    "id": {
+      "title": "Subject DID",
+      "type": "string",
+      "description": "A decentralized identifier of the credential holder."
+    },
     "degree": {
       "title": "Degree",
       "type": "object",
@@ -56,10 +61,6 @@
           "format": "date"
         }
       }
-    },
-    "id": {
-      "title": "Subject DID",
-      "type": "string"
     }
   }
 }
