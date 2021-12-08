@@ -6,28 +6,6 @@
   "additionalProperties": false,
   "required": ["person", "degree"],
   "properties": {
-    "id": {
-      "title": "Subject DID",
-      "type": "string"
-    },
-    "person": {
-      "title": "Person",
-      "type": "object",
-      "required": ["fullName"],
-      "properties": {
-        "fullName": {
-          "title": "Full Name",
-          "type": "string",
-          "description": "The person's full name."
-        },
-        "dateOfBirth": {
-          "title": "Date of birth",
-          "description": "The person's date of birth.",
-          "type": "string",
-          "format": "date"
-        }
-      }
-    },
     "degree": {
       "title": "Degree",
       "type": "object",
@@ -60,6 +38,28 @@
         }
       },
       "required": ["name", "type"]
+    },
+    "person": {
+      "title": "Person",
+      "type": "object",
+      "required": ["fullName"],
+      "properties": {
+        "fullName": {
+          "title": "Full Name",
+          "type": "string",
+          "description": "The person's full name."
+        },
+        "dateOfBirth": {
+          "title": "Date of birth",
+          "description": "The person's date of birth.",
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "id": {
+      "title": "Subject DID",
+      "type": "string"
     }
   }
 }
