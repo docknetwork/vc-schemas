@@ -5,7 +5,7 @@
       "uri": "https://docknetwork.github.io/vc-schemas/basic-credential.json"
     },
     {
-      "name": "University Degree",
+      "name": "University Degree Credential",
       "uri": "https://docknetwork.github.io/vc-schemas/university-degree.json"
     }
   ]
