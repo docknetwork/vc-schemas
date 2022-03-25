@@ -3,7 +3,7 @@
   "name": "University Degree",
   "description": "A representation of a university degree issued to a person",
   "type": "object",
-  "additionalProperties": true,
+  "additionalProperties": false,
   "properties": {
     "id": {
       "title": "Subject ID",
@@ -21,32 +21,34 @@
         },
         "type": {
           "title": "Degree Type",
-          "type": "string",
           "description": "The type of degree earned.",
-          "enum": [
-            "UndergraduateDegree",
-            "TransferDegree",
-            "AssociateDegree",
-            "BachelorDegree",
-            "GraduateDegree",
-            "MasterDegree",
-            "DoctoralDegree",
-            "ProfessionalDegree",
-            "SpecialistDegree"
-          ]
+          "oneOf": [{
+            "type": "string",
+          	"enum": [
+              "UndergraduateDegree",
+              "TransferDegree",
+              "AssociateDegree",
+              "BachelorDegree",
+              "GraduateDegree",
+              "MasterDegree",
+              "DoctoralDegree",
+              "ProfessionalDegree",
+              "SpecialistDegree"
+            ]
+          }, {
+            "type": "string"
+          }]
         },
         "dateEarned": {
           "title": "Earned Degree Date",
           "type": "string",
           "format": "date"
         }
-      },
-      "required": ["name", "type"]
+      }
     },
     "person": {
       "title": "Person",
       "type": "object",
-      "required": ["fullName"],
       "properties": {
         "fullName": {
           "title": "Full Name",
