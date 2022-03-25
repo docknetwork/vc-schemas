@@ -4,7 +4,6 @@
   "description": "A representation of a university degree issued to a person",
   "type": "object",
   "additionalProperties": false,
-  "required": ["person", "degree"],
   "properties": {
     "id": {
       "title": "Subject ID",
