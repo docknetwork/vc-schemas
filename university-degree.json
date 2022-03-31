@@ -21,23 +21,8 @@
         },
         "type": {
           "title": "Degree Type",
-          "description": "The type of degree earned.",
-          "oneOf": [{
-            "type": "string",
-          	"enum": [
-              "UndergraduateDegree",
-              "TransferDegree",
-              "AssociateDegree",
-              "BachelorDegree",
-              "GraduateDegree",
-              "MasterDegree",
-              "DoctoralDegree",
-              "ProfessionalDegree",
-              "SpecialistDegree"
-            ]
-          }, {
-            "type": "string"
-          }]
+          "type": "string",
+          "description": "The type of degree earned."
         },
         "dateEarned": {
           "title": "Earned Degree Date",
