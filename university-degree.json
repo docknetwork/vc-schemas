@@ -6,9 +6,9 @@
   "additionalProperties": false,
   "properties": {
     "id": {
-      "title": "Subject ID",
+      "title": "Recipient ID",
       "type": "string",
-      "description": "A unique identifier of the credential holder, could also be their DID."
+      "description": "A unique identifier of the recipient. Example: DID, Email Address, National ID Number, Employee ID, Student ID, etc."
     },
     "degree": {
       "title": "Degree",
@@ -41,7 +41,7 @@
           "description": "The person's full name."
         },
         "dateOfBirth": {
-          "title": "Date of birth",
+          "title": "Date of Birth",
           "description": "The person's date of birth.",
           "type": "string",
           "format": "date"
