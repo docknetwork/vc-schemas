@@ -31,22 +31,16 @@
         }
       }
     },
-    "person": {
-      "title": "Person",
-      "type": "object",
-      "properties": {
-        "fullName": {
-          "title": "Full Name",
-          "type": "string",
-          "description": "The person's full name."
-        },
-        "dateOfBirth": {
-          "title": "Date of Birth",
-          "description": "The person's date of birth.",
-          "type": "string",
-          "format": "date"
-        }
-      }
+    "subjectName": {
+      "title": "Full Name",
+      "type": "string",
+      "description": "The person's full name."
+    },
+    "dateOfBirth": {
+      "title": "Date of Birth",
+      "description": "The person's date of birth.",
+      "type": "string",
+      "format": "date"
     }
   }
 }
