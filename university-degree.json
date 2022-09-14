@@ -34,7 +34,8 @@
     "subjectName": {
       "title": "Full Name",
       "type": "string",
-      "description": "The person's full name."
+      "description": "The person's full name.",
+      "required": true
     },
     "dateOfBirth": {
       "title": "Date of Birth",
