@@ -4,6 +4,7 @@
   "description": "A representation of a university degree issued to a person",
   "type": "object",
   "additionalProperties": false,
+  "required": ["subjectName"],
   "properties": {
     "id": {
       "title": "Recipient ID",
@@ -34,8 +35,7 @@
     "subjectName": {
       "title": "Full Name",
       "type": "string",
-      "description": "The person's full name.",
-      "required": true
+      "description": "The person's full name."
     },
     "dateOfBirth": {
       "title": "Date of Birth",
