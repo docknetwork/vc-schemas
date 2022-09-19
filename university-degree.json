@@ -26,7 +26,7 @@
     "dateEarned": {
       "title": "Earned Degree Date",
       "type": "string",
-      "format": "date
+      "format": "date"
     },
     "subjectName": {
       "title": "Full Name",
@@ -37,7 +37,7 @@
       "title": "Date of Birth",
       "description": "The person's date of birth.",
       "type": "string",
-      "format": "date
+      "format": "date"
     }
   }
 }
