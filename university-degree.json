@@ -4,33 +4,29 @@
   "description": "A representation of a university degree issued to a person",
   "type": "object",
   "additionalProperties": false,
-  "required": ["subjectName"],
+  "required": [
+    "subjectName"
+  ],
   "properties": {
     "id": {
       "title": "Recipient ID",
       "type": "string",
       "description": "A unique identifier of the recipient. Example: DID, Email Address, National ID Number, Employee ID, Student ID, etc."
     },
-    "degree": {
-      "title": "Degree",
-      "type": "object",
-      "properties": {
-        "name": {
-          "title": "Degree Name",
-          "type": "string",
-          "description": "The full degree name and field."
-        },
-        "type": {
-          "title": "Degree Type",
-          "type": "string",
-          "description": "The type of degree earned."
-        },
-        "dateEarned": {
-          "title": "Earned Degree Date",
-          "type": "string",
-          "format": "date"
-        }
-      }
+    "degreeName": {
+      "title": "Degree Name",
+      "type": "string",
+      "description": "The full degree name and field."
+    },
+    "degreeType": {
+      "title": "Degree Type",
+      "type": "string",
+      "description": "The type of degree earned."
+    },
+    "dateEarned": {
+      "title": "Earned Degree Date",
+      "type": "string",
+      "format": "date"
     },
     "subjectName": {
       "title": "Full Name",
