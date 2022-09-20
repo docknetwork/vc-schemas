@@ -28,7 +28,7 @@
       "type": "string",
       "format": "date"
     },
-    "subjectName": {
+    "name": {
       "title": "Full Name",
       "type": "string",
       "description": "The person's full name."
