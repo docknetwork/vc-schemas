@@ -5,7 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "subjectName"
+    "name"
   ],
   "properties": {
     "id": {
