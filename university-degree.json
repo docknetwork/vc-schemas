@@ -33,6 +33,11 @@
       "type": "string",
       "description": "The person's full name."
     },
+    "email": {
+      "title": "Recipient Email",
+      "type": "string",
+      "description": "The email of the credential holder."
+    },
     "dateOfBirth": {
       "title": "Date of Birth",
       "description": "The person's date of birth.",
