@@ -3,7 +3,7 @@
   "name": "University Degree",
   "description": "A representation of a university degree issued to a person",
   "type": "object",
-  "additionalProperties": false,
+  "additionalProperties": true,
   "required": [
     "name"
   ],
