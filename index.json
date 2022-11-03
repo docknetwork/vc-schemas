@@ -7,6 +7,14 @@
     {
       "name": "University Degree Credential",
       "uri": "https://docknetwork.github.io/vc-schemas/university-degree.json"
+    },
+    {
+      "name": "Commercial Invoice Credential",
+      "uri": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json"
+    },
+    {
+      "name": "Bill of Lading",
+      "uri": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json"
     }
   ]
 }

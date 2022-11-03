@@ -1,0 +1,369 @@
+{
+  "$id": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "Commercial Invoice Schema",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "shipper": {
+      "title": "Shipper",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Shipper Name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Shipper Address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "title": "Phone Number",
+          "type": "number"
+        },
+        "personOfContact": {
+          "title": "Person of Contact",
+          "type": "string"
+        },
+        "companyTaxId": {
+          "title": "Company Tax ID",
+          "type": "number"
+        },
+        "emailAddress": {
+          "title": "Email Address",
+          "type": "string"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "consignee": {
+      "title": "Consignee",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "title": "Phone Number",
+          "type": "number"
+        },
+        "personOfContact": {
+          "title": "Person of Contact",
+          "type": "string"
+        },
+        "companyTaxId": {
+          "title": "Company Tax ID",
+          "type": "number"
+        },
+        "emailAddress": {
+          "title": "Email Address",
+          "type": "string"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "buyer": {
+      "title": "Buyer",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "title": "Phone Number",
+          "type": "number"
+        },
+        "personOfContact": {
+          "title": "Person of Contact",
+          "type": "string"
+        },
+        "companyTaxId": {
+          "title": "Company Tax ID",
+          "type": "number"
+        },
+        "emailAddress": {
+          "title": "Email Address",
+          "type": "string"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "invoiceNumber": {
+      "title": "Invoice Number",
+      "type": "number"
+    },
+    "invoiceDate": {
+      "format": "date",
+      "title": "Invoice Date",
+      "type": "string"
+    },
+    "reference": {
+      "title": "Reference",
+      "type": "string"
+    },
+    "billOfLadingNumber": {
+      "title": "Bill of Lading Number",
+      "type": "string"
+    },
+    "buyerReference": {
+      "title": "Buyer Reference",
+      "type": "string"
+    },
+    "methodOfDispatch": {
+      "title": "Method of Dispatch",
+      "type": "string"
+    },
+    "typeOfShipment": {
+      "title": "Type of Shipment",
+      "type": "string"
+    },
+    "vesselAircraft": {
+      "title": "Vessel / Aircraft",
+      "type": "string"
+    },
+    "voyageNumber": {
+      "title": "Voyage Number",
+      "type": "string"
+    },
+    "portOfLoading": {
+      "title": "Port of Loading",
+      "type": "string"
+    },
+    "dateOfDeparture": {
+      "format": "date",
+      "title": "Date of Departure",
+      "type": "string"
+    },
+    "portOfDischarge": {
+      "title": "Port of Discharge",
+      "type": "string"
+    },
+    "finalDestination": {
+      "title": "Final Destination",
+      "type": "string"
+    },
+    "countryOriginGoods": {
+      "title": "Country of Origin of Goods",
+      "type": "string"
+    },
+    "countryFinalDestination": {
+      "title": "Country of Final Destination",
+      "type": "string"
+    },
+    "termsMethodOfPayment": {
+      "title": "Terms / Method of Payment",
+      "type": "string"
+    },
+    "marineCoverPolicyNumber": {
+      "title": "Marine Cover Policy Number",
+      "type": "string"
+    },
+    "letterOfCreditNumber": {
+      "title": "Letter of Credit Number",
+      "type": "string"
+    },
+    "additionalInfo": {
+      "title": "Additional Info",
+      "type": "string"
+    },
+    "bank": {
+      "title": "Bank",
+      "type": "object",
+      "properties": {
+        "accountName": {
+          "title": "Account Name",
+          "type": "string"
+        },
+        "accountNumber": {
+          "title": "Account Number",
+          "type": "number"
+        },
+        "bankName": {
+          "title": "Bank Name",
+          "type": "string"
+        },
+        "bankAddress": {
+          "title": "Bank Address",
+          "type": "string"
+        },
+        "achRoutingNumber": {
+          "title": "ACH Routing Number",
+          "type": "number"
+        },
+        "swiftCode": {
+          "title": "SWIFT Code",
+          "type": "string"
+        },
+        "iban": {
+          "title": "IBAN",
+          "type": "string"
+        },
+        "fedwireRoutingNumber": {
+          "title": "Fedwire Routing Number",
+          "type": "number"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "incoterms2020": {
+      "title": "Incoterms 2020",
+      "type": "string"
+    },
+    "currency": {
+      "title": "Currency",
+      "type": "string"
+    },
+    "signatoryCompany": {
+      "title": "Signatory Company",
+      "type": "string"
+    },
+    "nameOfAuthorizedSignatory": {
+      "title": "Name of Authorized Signatory",
+      "type": "string"
+    },
+    "signature": {
+      "title": "Signature",
+      "type": "string"
+    },
+    "product1": {
+      "title": "Product 1",
+      "type": "object",
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "descriptionOfGoods": {
+          "title": "Description of Goods",
+          "type": "string"
+        },
+        "hsCode": {
+          "title": "HS Code",
+          "type": "number"
+        },
+        "unitQuantity": {
+          "title": "Unit Quantity",
+          "type": "number"
+        },
+        "unitType": {
+          "title": "Unit Type",
+          "type": "string"
+        },
+        "priceUnit": {
+          "title": "Price Unit",
+          "type": "number"
+        },
+        "amount": {
+          "title": "Amount",
+          "type": "number"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "product2": {
+      "title": "Product 2",
+      "type": "object",
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "descriptionOfGoods": {
+          "title": "Description of Goods",
+          "type": "string"
+        },
+        "hsCode": {
+          "title": "HS Code",
+          "type": "number"
+        },
+        "unitQuantity": {
+          "title": "Unit Quantity",
+          "type": "number"
+        },
+        "unitType": {
+          "title": "Unit Type",
+          "type": "string"
+        },
+        "priceUnit": {
+          "title": "Price Unit",
+          "type": "number"
+        },
+        "amount": {
+          "title": "Amount",
+          "type": "number"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "product3": {
+      "title": "Product 3",
+      "type": "object",
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "descriptionOfGoods": {
+          "title": "Description of Goods",
+          "type": "string"
+        },
+        "hsCode": {
+          "title": "HS Code",
+          "type": "number"
+        },
+        "unitQuantity": {
+          "title": "Unit Quantity",
+          "type": "number"
+        },
+        "unitType": {
+          "title": "Unit Type",
+          "type": "string"
+        },
+        "priceUnit": {
+          "title": "Price Unit",
+          "type": "number"
+        },
+        "amount": {
+          "title": "Amount",
+          "type": "number"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "totalUnitQuantity": {
+      "title": "Total Unit Quantity",
+      "type": "number"
+    },
+    "totalAmount": {
+      "title": "Total Amount",
+      "type": "string"
+    },
+    "consignmentUnitQtTotal": {
+      "title": "Consignment Unit Quantity Total",
+      "type": "number"
+    },
+    "consignmentTotalAmount": {
+      "title": "Consignment Total Amount",
+      "type": "number"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

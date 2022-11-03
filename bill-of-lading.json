@@ -1,0 +1,272 @@
+{
+  "$id": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "Bill Of Lading",
+  "description": "Unnamed Dock Schema",
+  "type": "object",
+  "properties": {
+    "totalNetWeight": {
+      "title": "Total Net Weight",
+      "type": "number"
+    },
+    "shipperReference": {
+      "title": "Shipper’s Reference",
+      "type": "string"
+    },
+    "carrierReference": {
+      "title": "Carrier’s Reference",
+      "type": "string"
+    },
+    "bolNumber": {
+      "title": "Bill of Lading Number",
+      "type": "string"
+    },
+    "consignmentReference": {
+      "title": "Unique Consignment Reference",
+      "type": "string"
+    },
+    "notifyParty": {
+      "title": "Notify Party (if not consignee)",
+      "type": "string"
+    },
+    "additionalNotifyParty": {
+      "title": "Additional Notify Party",
+      "type": "string"
+    },
+    "preCarriageBy": {
+      "title": "Pre-Carriage By",
+      "type": "string"
+    },
+    "placeOfReceipt": {
+      "title": "Place of Receipt",
+      "type": "string"
+    },
+    "vesselOrAircraft": {
+      "title": "Vessel / Aircraft",
+      "type": "string"
+    },
+    "voyageNumber": {
+      "title": "Voyage Number",
+      "type": "string"
+    },
+    "portOfLoading": {
+      "title": "Port of Loading",
+      "type": "string"
+    },
+    "portOfDischarge": {
+      "title": "Port of Discharge",
+      "type": "string"
+    },
+    "placeOfDelivery": {
+      "title": "Place of Delivery",
+      "type": "string"
+    },
+    "finalDestination": {
+      "title": "Final Destination",
+      "type": "string"
+    },
+    "additionalInformation": {
+      "title": "Additional Information",
+      "type": "string"
+    },
+    "marksAndNumbers": {
+      "title": "Marks & Numbers",
+      "type": "string"
+    },
+    "kindNumberOfPackages": {
+      "title": "Kind & Number of Packages",
+      "type": "string"
+    },
+    "descriptionOfGoods": {
+      "title": "Description of Goods",
+      "type": "string"
+    },
+    "netWeightKG": {
+      "title": "Net Weight (Kg)",
+      "type": "number"
+    },
+    "grossWeightKG": {
+      "title": "Gross Weight (Kg)",
+      "type": "number"
+    },
+    "measurementsM2": {
+      "title": "Measurements (m2)",
+      "type": "number"
+    },
+    "thisPageGrossWeight": {
+      "title": "Total This Page Gross Weight",
+      "type": "number"
+    },
+    "thisPageMeasurementsM2": {
+      "title": "Total This Page Measurements (m2)",
+      "type": "number"
+    },
+    "consignmentTotalNetWeight": {
+      "title": "Consignment Total Net Weight",
+      "type": "number"
+    },
+    "consignmentTotalGrossWeight": {
+      "title": "Consignment Total Gross Weight",
+      "type": "number"
+    },
+    "consigmentTotalMeasurementsM2": {
+      "title": "Consignment Total Measurements (m2)",
+      "type": "number"
+    },
+    "numberOfOriginalBOL": {
+      "title": "Number of original Bills of Lading",
+      "type": "number"
+    },
+    "containerNumbers": {
+      "title": "Container Numbers",
+      "type": "string"
+    },
+    "sealNumbers": {
+      "title": "Seal Numbers",
+      "type": "string"
+    },
+    "sizeAndType": {
+      "title": "Size/Type",
+      "type": "string"
+    },
+    "totalUnitsWords": {
+      "title": "Total Number of Containers or other packages or units (in words)",
+      "type": "string"
+    },
+    "incoterms2020": {
+      "title": "Incoterms 2020",
+      "type": "string"
+    },
+    "payableAt": {
+      "title": "Payable at",
+      "type": "string"
+    },
+    "freightCharges": {
+      "title": "Freight Charges",
+      "type": "string"
+    },
+    "shippedOnBoardDate": {
+      "format": "date",
+      "title": "Shipped on Board Date",
+      "type": "string"
+    },
+    "placeOfIssue": {
+      "title": "Place of Issue",
+      "type": "string"
+    },
+    "signatoryCompany": {
+      "title": "Signatory Company",
+      "type": "string"
+    },
+    "authorizedSignatoryName": {
+      "title": "Name of Authorized Signatory",
+      "type": "string"
+    },
+    "signature": {
+      "title": "Signature",
+      "type": "string"
+    },
+    "tocs": {
+      "title": "Terms and Conditions",
+      "type": "string"
+    },
+    "shipper": {
+      "title": "Shipper",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Shipper’s Name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Shipper’s Address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "title": "Shipper’s Phone Number",
+          "type": "string"
+        },
+        "personOfContact": {
+          "title": "Shipper’s Person of Contact",
+          "type": "string"
+        },
+        "companyTaxID": {
+          "title": "Shipper’s Company Tax ID",
+          "type": "string"
+        },
+        "emailAddress": {
+          "title": "Shipper’s Email Address",
+          "type": "string"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "consignee": {
+      "title": "Consignee",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Consignee’s Name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Consignee’s Address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "title": "Consignee’s Phone Number",
+          "type": "string"
+        },
+        "personOfContact": {
+          "title": "Consignee’s Person of Contact",
+          "type": "string"
+        },
+        "companyTaxID": {
+          "title": "Consignee’s Company Tax ID",
+          "type": "string"
+        },
+        "email": {
+          "title": "Consignee’s Email Address",
+          "type": "string"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    },
+    "carrier": {
+      "title": "Carrier",
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Carrier’s Name",
+          "type": "string"
+        },
+        "address": {
+          "title": "Carrier’s Address",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "title": "Carrier’s Phone Number",
+          "type": "string"
+        },
+        "personOfContact": {
+          "title": "Carrier’s Person of Contact",
+          "type": "string"
+        },
+        "companyTaxID": {
+          "title": "Carrier’s Company Tax ID",
+          "type": "string"
+        },
+        "email": {
+          "title": "Carrier’s Email Address",
+          "type": "string"
+        }
+      },
+      "dependencies": {},
+      "required": []
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}
