@@ -9,7 +9,7 @@
       "uri": "https://docknetwork.github.io/vc-schemas/university-degree.json"
     },
     {
-      "name": "Commercial Invoice Credential",
+      "name": "Commercial Invoice",
       "uri": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json"
     },
     {
