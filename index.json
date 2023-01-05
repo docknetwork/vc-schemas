@@ -2,18 +2,22 @@
   "schemas": [
     {
       "name": "Basic Credential",
+      "type": "BasicCredential",
       "uri": "https://docknetwork.github.io/vc-schemas/basic-credential.json"
     },
     {
       "name": "University Degree Credential",
+      "type": "UniversityDegreeCredential",
       "uri": "https://docknetwork.github.io/vc-schemas/university-degree.json"
     },
     {
       "name": "Commercial Invoice",
+      "type": "CommercialInvoice",
       "uri": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json"
     },
     {
       "name": "Bill of Lading",
+      "type": "BillOfLading",
       "uri": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json"
     }
   ]
