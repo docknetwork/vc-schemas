@@ -16,7 +16,7 @@
       "uri": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json"
     },
     {
-      "name": "Bill of Lading",
+      "name": "Bill Of Lading",
       "type": "BillOfLading",
       "uri": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json"
     }
