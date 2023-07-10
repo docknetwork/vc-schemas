@@ -1,49 +1,147 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://docknetwork.github.io/vc-schemas/university-degree.json",
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://docknetwork.github.io/vc-schemas/university-degree.json-ld",
+      "jsonSchema": "https://docknetwork.github.io/vc-schemas/university-degree.json"
+    }
+  },
   "name": "University Degree",
   "description": "A representation of a university degree issued to a person",
   "type": "object",
-  "additionalProperties": false,
   "required": [
-    "name",
-    "dateEarned"
+    "@context",
+    "id",
+    "type",
+    "issuanceDate",
+    "credentialSubject",
+    "credentialSchema",
+    "credentialStatus",
+    "issuer"
   ],
   "properties": {
+    "@context": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
     "id": {
-      "title": "Recipient ID",
-      "type": "string",
-      "description": "A unique identifier of the recipient. Example: DID, Email Address, National ID Number, Employee ID, Student ID, etc."
+      "type": "string"
     },
-    "degreeName": {
-      "title": "Degree Name",
-      "type": "string",
-      "description": "The full degree name and field."
+    "type": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
     },
-    "degreeType": {
-      "title": "Degree Type",
-      "type": "string",
-      "description": "The type of degree earned."
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
     },
-    "dateEarned": {
-      "title": "Earned Degree Date",
+    "issuanceDate": {
       "type": "string",
-      "format": "date"
+      "format": "date-time"
     },
-    "name": {
-      "title": "Full Name",
+    "expirationDate": {
       "type": "string",
-      "description": "The person's full name."
+      "format": "date-time"
     },
-    "email": {
-      "title": "Recipient Email",
-      "type": "string",
-      "description": "The email of the credential holder."
+    "credentialSchema": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
     },
-    "dateOfBirth": {
-      "title": "Date of Birth",
-      "description": "The person's date of birth.",
+    "subjectPosition": {
       "type": "string",
-      "format": "date"
+      "enum": [
+        "none",
+        "index",
+        "value"
+      ]
+    },
+    "merklizationRootPosition": {
+      "type": "string",
+      "enum": [
+        "none",
+        "index",
+        "value"
+      ]
+    },
+    "revNonce": {
+      "type": "integer"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "updatable": {
+      "type": "boolean"
+    },
+    "credentialSubject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "dateEarned"],
+      "properties": {
+        "id": {
+          "title": "Recipient ID",
+          "type": "string",
+          "description": "A unique identifier of the recipient. Example: DID, email address, national ID number, employee ID, student ID etc. If you enter the recipient's DID, the person will automatically receive the credential in their Dock wallet."
+        },
+        "degreeName": {
+          "title": "Degree Name",
+          "type": "string",
+          "description": "The full degree name and field."
+        },
+        "degreeType": {
+          "title": "Degree Type",
+          "type": "string",
+          "description": "The type of degree earned."
+        },
+        "dateEarned": {
+          "title": "Earned Degree Date",
+          "type": "string",
+          "format": "date"
+        },
+        "name": {
+          "title": "Full Name",
+          "type": "string",
+          "description": "The person's full name."
+        },
+        "dateOfBirth": {
+          "title": "Date of Birth",
+          "description": "The person's date of birth.",
+          "type": "string",
+          "format": "date"
+        }
+      }
     }
   }
-}
+} 
