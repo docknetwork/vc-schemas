@@ -1,0 +1,209 @@
+{
+  "@version": 1.1,
+  "@protected": true,
+  "id": "@id",
+  "type": "@type",
+  "BillOfLading": {
+    "@id": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json-ld#BillOfLading",
+    "@context": {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "dk": "https://ld.dock.io/credentials#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "totalNetWeight": {
+        "@id": "dk:totalNetWeight",
+        "@type": "xsd:number"
+      },
+      "shipperReference": {
+        "@id": "dk:shipperReference",
+        "@type": "xsd:string"
+      },
+      "carrierReference": {
+        "@id": "dk:carrierReference",
+        "@type": "xsd:string"
+      },
+      "bolNumber": {
+        "@id": "dk:bolNumber",
+        "@type": "xsd:string"
+      },
+      "consignmentReference": {
+        "@id": "dk:consignmentReference",
+        "@type": "xsd:string"
+      },
+      "notifyParty": {
+        "@id": "dk:notifyParty",
+        "@type": "xsd:string"
+      },
+      "additionalNotifyParty": {
+        "@id": "dk:additionalNotifyParty",
+        "@type": "xsd:string"
+      },
+      "preCarriageBy": {
+        "@id": "dk:preCarriageBy",
+        "@type": "xsd:string"
+      },
+      "placeOfReceipt": {
+        "@id": "dk:placeOfReceipt",
+        "@type": "xsd:string"
+      },
+      "vesselOrAircraft": {
+        "@id": "dk:vesselOrAircraft",
+        "@type": "xsd:string"
+      },
+      "voyageNumber": {
+        "@id": "dk:voyageNumber",
+        "@type": "xsd:string"
+      },
+      "portOfLoading": {
+        "@id": "dk:portOfLoading",
+        "@type": "xsd:string"
+      },
+      "portOfDischarge": {
+        "@id": "dk:portOfDischarge",
+        "@type": "xsd:string"
+      },
+      "placeOfDelivery": {
+        "@id": "dk:placeOfDelivery",
+        "@type": "xsd:string"
+      },
+      "finalDestination": {
+        "@id": "dk:finalDestination",
+        "@type": "xsd:string"
+      },
+      "additionalInformation": {
+        "@id": "dk:additionalInformation",
+        "@type": "xsd:string"
+      },
+      "marksAndNumbers": {
+        "@id": "dk:marksAndNumbers",
+        "@type": "xsd:string"
+      },
+      "kindNumberOfPackages": {
+        "@id": "dk:kindNumberOfPackages",
+        "@type": "xsd:string"
+      },
+      "descriptionOfGoods": {
+        "@id": "dk:descriptionOfGoods",
+        "@type": "xsd:string"
+      },
+      "netWeightKG": {
+        "@id": "dk:netWeightKG",
+        "@type": "xsd:number"
+      },
+      "grossWeightKG": {
+        "@id": "dk:grossWeightKG",
+        "@type": "xsd:number"
+      },
+      "measurementsM2": {
+        "@id": "dk:measurementsM2",
+        "@type": "xsd:number"
+      },
+      "thisPageGrossWeight": {
+        "@id": "dk:thisPageGrossWeight",
+        "@type": "xsd:number"
+      },
+      "thisPageMeasurementsM2": {
+        "@id": "dk:thisPageMeasurementsM2",
+        "@type": "xsd:number"
+      },
+      "consignmentTotalNetWeight": {
+        "@id": "dk:consignmentTotalNetWeight",
+        "@type": "xsd:number"
+      },
+      "consignmentTotalGrossWeight": {
+        "@id": "dk:consignmentTotalGrossWeight",
+        "@type": "xsd:number"
+      },
+      "consigmentTotalMeasurementsM2": {
+        "@id": "dk:consigmentTotalMeasurementsM2",
+        "@type": "xsd:number"
+      },
+      "numberOfOriginalBOL": {
+        "@id": "dk:numberOfOriginalBOL",
+        "@type": "xsd:number"
+      },
+      "containerNumbers": {
+        "@id": "dk:containerNumbers",
+        "@type": "xsd:string"
+      },
+      "sealNumbers": {
+        "@id": "dk:sealNumbers",
+        "@type": "xsd:string"
+      },
+      "sizeAndType": {
+        "@id": "dk:sizeAndType",
+        "@type": "xsd:string"
+      },
+      "totalUnitsWords": {
+        "@id": "dk:totalUnitsWords",
+        "@type": "xsd:string"
+      },
+      "incoterms2020": {
+        "@id": "dk:incoterms2020",
+        "@type": "xsd:string"
+      },
+      "payableAt": {
+        "@id": "dk:payableAt",
+        "@type": "xsd:string"
+      },
+      "freightCharges": {
+        "@id": "dk:freightCharges",
+        "@type": "xsd:string"
+      },
+      "shippedOnBoardDate": {
+        "@id": "dk:shippedOnBoardDate",
+        "@type": "xsd:string"
+      },
+      "placeOfIssue": {
+        "@id": "dk:placeOfIssue",
+        "@type": "xsd:string"
+      },
+      "signatoryCompany": {
+        "@id": "dk:signatoryCompany",
+        "@type": "xsd:string"
+      },
+      "authorizedSignatoryName": {
+        "@id": "dk:authorizedSignatoryName",
+        "@type": "xsd:string"
+      },
+      "signature": {
+        "@id": "dk:signature",
+        "@type": "xsd:string"
+      },
+      "tocs": {
+        "@id": "dk:tocs",
+        "@type": "xsd:string"
+      },
+      "name": {
+        "@id": "dk:name",
+        "@type": "xsd:string"
+      },
+      "address": {
+        "@id": "dk:address",
+        "@type": "xsd:string"
+      },
+      "phoneNumber": {
+        "@id": "dk:phoneNumber",
+        "@type": "xsd:string"
+      },
+      "personOfContact": {
+        "@id": "dk:personOfContact",
+        "@type": "xsd:string"
+      },
+      "companyTaxID": {
+        "@id": "dk:companyTaxID",
+        "@type": "xsd:string"
+      },
+      "emailAddress": {
+        "@id": "dk:emailAddress",
+        "@type": "xsd:string"
+      },
+      "email": {
+        "@id": "dk:email",
+        "@type": "xsd:string"
+      }
+    }
+  }
+}

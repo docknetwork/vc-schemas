@@ -1,5 +1,11 @@
 {
   "$id": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json",
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json-ld",
+      "jsonSchema": "https://docknetwork.github.io/vc-schemas/bill-of-lading.json"
+    }
+  },
   "$schema": "http://json-schema.org/draft-07/schema#",
   "name": "Bill Of Lading",
   "description": "Unnamed Dock Schema",
