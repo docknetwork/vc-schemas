@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://docknetwork.github.io/vc-schemas/proof-of-employment.json",
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://docknetwork.github.io/vc-schemas/proof-of-employment.json-ld",
+      "jsonSchema": "https://docknetwork.github.io/vc-schemas/proof-of-employment.json"
+    }
+  },
+  "name": "Proof Of Employment",
+  "description": "A representation of a Proof of Employment credential",
+  "type": "object",
+  "required": [
+    "@context",
+    "id",
+    "type",
+    "issuanceDate",
+    "credentialSubject",
+    "credentialSchema",
+    "credentialStatus",
+    "issuer"
+  ],
+  "properties": {
+    "@context": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "issuanceDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expirationDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "credentialSchema": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "subjectPosition": {
+      "type": "string",
+      "enum": [
+        "none",
+        "index",
+        "value"
+      ]
+    },
+    "merklizationRootPosition": {
+      "type": "string",
+      "enum": [
+        "none",
+        "index",
+        "value"
+      ]
+    },
+    "revNonce": {
+      "type": "integer"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "updatable": {
+      "type": "boolean"
+    },
+    "credentialSubject": {
+      "type": "object",
+      "required": ["name", "jobTitle"],
+      "properties": {
+        "id": {
+          "title": "Subject ID",
+          "type": "string",
+          "description": "A unique identifier of the recipient. Example: DID, National ID Number, Employee ID, Student ID, etc."
+        },
+        "name": {
+          "title": "Subject Name",
+          "type": "string",
+          "description": "The name of the credential holder."
+        },
+        "jobTitle": {
+          "title": "Subject Job Title",
+          "type": "string",
+          "description": "The job title of the credential holder."
+        }
+      }
+    }
+  }
+} 
