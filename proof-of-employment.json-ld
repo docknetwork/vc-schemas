@@ -1,0 +1,25 @@
+{
+  "@version": 1.1,
+  "@protected": true,
+  "id": "@id",
+  "type": "@type",
+  "ProofOfEmployment": {
+    "@id": "https://schema.dock.io/ProofOfEmployment-V1690475198881.json-ld#ProofOfEmployment",
+    "@context": {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "dk": "https://ld.dock.io/credentials#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "name": {
+        "@id": "dk:name",
+        "@type": "xsd:string"
+      },
+      "jobTitle": {
+        "@id": "dk:jobTitle",
+        "@type": "xsd:string"
+      }
+    }
+  }
+}
