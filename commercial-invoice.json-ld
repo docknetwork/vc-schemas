@@ -1,0 +1,213 @@
+{
+  "@version": 1.1,
+  "@protected": true,
+  "id": "@id",
+  "type": "@type",
+  "CommercialInvoiceSchema": {
+    "@id": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json-ld#CommercialInvoiceSchema",
+    "@context": {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "dk": "https://ld.dock.io/credentials#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "name": {
+        "@id": "dk:name",
+        "@type": "xsd:string"
+      },
+      "address": {
+        "@id": "dk:address",
+        "@type": "xsd:string"
+      },
+      "phoneNumber": {
+        "@id": "dk:phoneNumber",
+        "@type": "xsd:number"
+      },
+      "personOfContact": {
+        "@id": "dk:personOfContact",
+        "@type": "xsd:string"
+      },
+      "companyTaxId": {
+        "@id": "dk:companyTaxId",
+        "@type": "xsd:number"
+      },
+      "emailAddress": {
+        "@id": "dk:emailAddress",
+        "@type": "xsd:string"
+      },
+      "invoiceNumber": {
+        "@id": "dk:invoiceNumber",
+        "@type": "xsd:number"
+      },
+      "invoiceDate": {
+        "@id": "dk:invoiceDate",
+        "@type": "xsd:string"
+      },
+      "reference": {
+        "@id": "dk:reference",
+        "@type": "xsd:string"
+      },
+      "billOfLadingNumber": {
+        "@id": "dk:billOfLadingNumber",
+        "@type": "xsd:string"
+      },
+      "buyerReference": {
+        "@id": "dk:buyerReference",
+        "@type": "xsd:string"
+      },
+      "methodOfDispatch": {
+        "@id": "dk:methodOfDispatch",
+        "@type": "xsd:string"
+      },
+      "typeOfShipment": {
+        "@id": "dk:typeOfShipment",
+        "@type": "xsd:string"
+      },
+      "vesselAircraft": {
+        "@id": "dk:vesselAircraft",
+        "@type": "xsd:string"
+      },
+      "voyageNumber": {
+        "@id": "dk:voyageNumber",
+        "@type": "xsd:string"
+      },
+      "portOfLoading": {
+        "@id": "dk:portOfLoading",
+        "@type": "xsd:string"
+      },
+      "dateOfDeparture": {
+        "@id": "dk:dateOfDeparture",
+        "@type": "xsd:string"
+      },
+      "portOfDischarge": {
+        "@id": "dk:portOfDischarge",
+        "@type": "xsd:string"
+      },
+      "finalDestination": {
+        "@id": "dk:finalDestination",
+        "@type": "xsd:string"
+      },
+      "countryOriginGoods": {
+        "@id": "dk:countryOriginGoods",
+        "@type": "xsd:string"
+      },
+      "countryFinalDestination": {
+        "@id": "dk:countryFinalDestination",
+        "@type": "xsd:string"
+      },
+      "termsMethodOfPayment": {
+        "@id": "dk:termsMethodOfPayment",
+        "@type": "xsd:string"
+      },
+      "marineCoverPolicyNumber": {
+        "@id": "dk:marineCoverPolicyNumber",
+        "@type": "xsd:string"
+      },
+      "letterOfCreditNumber": {
+        "@id": "dk:letterOfCreditNumber",
+        "@type": "xsd:string"
+      },
+      "additionalInfo": {
+        "@id": "dk:additionalInfo",
+        "@type": "xsd:string"
+      },
+      "accountName": {
+        "@id": "dk:accountName",
+        "@type": "xsd:string"
+      },
+      "accountNumber": {
+        "@id": "dk:accountNumber",
+        "@type": "xsd:number"
+      },
+      "bankName": {
+        "@id": "dk:bankName",
+        "@type": "xsd:string"
+      },
+      "bankAddress": {
+        "@id": "dk:bankAddress",
+        "@type": "xsd:string"
+      },
+      "achRoutingNumber": {
+        "@id": "dk:achRoutingNumber",
+        "@type": "xsd:number"
+      },
+      "swiftCode": {
+        "@id": "dk:swiftCode",
+        "@type": "xsd:string"
+      },
+      "iban": {
+        "@id": "dk:iban",
+        "@type": "xsd:string"
+      },
+      "fedwireRoutingNumber": {
+        "@id": "dk:fedwireRoutingNumber",
+        "@type": "xsd:number"
+      },
+      "incoterms2020": {
+        "@id": "dk:incoterms2020",
+        "@type": "xsd:string"
+      },
+      "currency": {
+        "@id": "dk:currency",
+        "@type": "xsd:string"
+      },
+      "signatoryCompany": {
+        "@id": "dk:signatoryCompany",
+        "@type": "xsd:string"
+      },
+      "nameOfAuthorizedSignatory": {
+        "@id": "dk:nameOfAuthorizedSignatory",
+        "@type": "xsd:string"
+      },
+      "signature": {
+        "@id": "dk:signature",
+        "@type": "xsd:string"
+      },
+      "code": {
+        "@id": "dk:code",
+        "@type": "xsd:string"
+      },
+      "descriptionOfGoods": {
+        "@id": "dk:descriptionOfGoods",
+        "@type": "xsd:string"
+      },
+      "hsCode": {
+        "@id": "dk:hsCode",
+        "@type": "xsd:number"
+      },
+      "unitQuantity": {
+        "@id": "dk:unitQuantity",
+        "@type": "xsd:number"
+      },
+      "unitType": {
+        "@id": "dk:unitType",
+        "@type": "xsd:string"
+      },
+      "priceUnit": {
+        "@id": "dk:priceUnit",
+        "@type": "xsd:number"
+      },
+      "amount": {
+        "@id": "dk:amount",
+        "@type": "xsd:number"
+      },
+      "totalUnitQuantity": {
+        "@id": "dk:totalUnitQuantity",
+        "@type": "xsd:number"
+      },
+      "totalAmount": {
+        "@id": "dk:totalAmount",
+        "@type": "xsd:string"
+      },
+      "consignmentUnitQtTotal": {
+        "@id": "dk:consignmentUnitQtTotal",
+        "@type": "xsd:number"
+      },
+      "consignmentTotalAmount": {
+        "@id": "dk:consignmentTotalAmount",
+        "@type": "xsd:number"
+      }
+    }
+  }
+}

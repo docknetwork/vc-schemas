@@ -1,7 +1,13 @@
 {
   "$id": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json",
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json-ld",
+      "jsonSchema": "https://docknetwork.github.io/vc-schemas/commercial-invoice.json"
+    }
+  },
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "name": "Commercial Invoice Schema",
+  "name": "Commercial Invoice",
   "description": "",
   "type": "object",
   "properties": {
