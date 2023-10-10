@@ -371,5 +371,5 @@
     }
   },
   "required": [],
-  "additionalProperties": false
+  "additionalProperties": true
 }

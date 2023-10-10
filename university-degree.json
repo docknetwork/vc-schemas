@@ -107,7 +107,7 @@
     },
     "credentialSubject": {
       "type": "object",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "required": ["name", "dateEarned"],
       "properties": {
         "id": {
